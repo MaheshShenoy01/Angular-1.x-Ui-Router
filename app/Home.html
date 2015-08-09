@@ -1,0 +1,19 @@
+<div class="col-sm-2">
+          <ul id="sidebar" class="nav nav-stacked affix">
+                  <li ng-repeat="items in homeMenuItems">
+                     <a ui-sref="Home.{{items.item}}">{{items.item}}</a>
+                  </li>
+        </ul>
+</div>
+ <div class="col-sm-10">
+      
+        <div id="midCol" data-spy="affix" data-offset-top="300">
+           <div class="well">
+              <div ui-view> 
+              
+                    <h1>Home Options</h1>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, nam, explicabo, at ea omnis harum temporibus aperiam iure dicta consequuntur provident deserunt quaerat vero! Ipsa, omnis veniam in voluptate doloremque.</h4>
+                    </div>
+           </div>
+      </div>
+</div>

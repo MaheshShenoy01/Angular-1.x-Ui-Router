@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Sample UI Router Page</title>
+  </head>
+
+  <body ng-app="myApp">
+    <div class="container-fluid">
+      <nav role="navigation" class="navbar navbar-inverse">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img src="" alt="" />
+          <a href="#" class="navbar-brand">UiRouter</a>
+        </div>
+        <!-- Collection of nav links and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a ui-sref="Home">Home</a>
+            </li>
+            <li>
+              <a ui-sref="Learn">Learn</a>
+            </li>
+            <li>
+              <a ui-sref="Develop">Develop</a>
+            </li>
+            <li>
+              <a ui-sref="Discuss">Discuss</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <form role="search" class="navbar-form navbar-left">
+              <div class="form-group">
+                <input type="text" placeholder="Search" class="form-control" />
+              </div>
+            </form>
+            <li>
+              <a href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Content -->
+      <div class="container-fluid">
+        <div class="row">
+          <div ui-view></div>
+        </div>
+      </div>
+    </div>
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+    <script src="https://cdn.rawgit.com/angular-ui/ui-grid.info/gh-pages/release/3.0.0-rc.20/ui-grid.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js"></script>
+    <script src="angular-chart.js"></script>
+
+    
+    <link rel="stylesheet" href="angular-chart.css"/>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/angular-ui/ui-grid.info/gh-pages/release/3.0.0-rc.20/ui-grid.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </body>
+   
+</html>
